@@ -39,10 +39,10 @@ do
 
   else
   printf "%-20s %s\n" $output [${RED}OFFLINE${NORMAL}]
-  printf "%-20s %s\n" $output `grep 'Serial Number: ' ./Computers/$output.txt | sed 's/Serial Number: //g'` >> ./offline.txt
+  #printf "%-20s %s\n" $output `grep 'Serial Number: ' ./Computers/$output.txt | sed 's/Serial Number: //g'` >> ./offline.txt
   fi
 done
 
 printf "\n"
 sleep 1
-printf "Don't forget to delete online.txt and offline.txt before running the script again.\n\n"
+# printf "Don't forget to delete online.txt and offline.txt before running the script again.\n\n"

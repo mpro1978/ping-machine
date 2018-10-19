@@ -1,5 +1,6 @@
 #!/bin/bash
-# check and log if a host is reachable by ping
+# check and log if a host is reachable by ping 
+# start im Hintergrund, logt erst nach erneuter Verbindung
 
 #CONFIGURATION
 

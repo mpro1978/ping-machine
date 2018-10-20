@@ -1,5 +1,5 @@
 #!/bin/bash
-# check and log if a host is reachable by ping 
+# check and log if a host is reachable by ping
 # start im Hintergrund, logt erst nach erneuter Verbindung
 
 #CONFIGURATION
@@ -7,7 +7,7 @@
 #IP of host
 WATCH_IP="192.168.178.66"
 #path to logfile
-LOGFILE="/home/markus/test/watchip.log"
+LOGFILE="/home/Logfiles/bursche2.log"
 #duration between pings
 PAUSE=3
 #how many failed pings before log

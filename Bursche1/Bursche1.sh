@@ -34,12 +34,14 @@ do
   ping -c 1 "$output" &> /dev/null
   if [ $? -eq 0 ]; then
   printf "%-20s %s\n" $output [${GREEN}ONLINE${NORMAL}]
-  printf "$output\n" >> online.txt
+  printf "$output\n" >> /home/Logfiles/bursche1_online.txt
 
 
   else
   printf "%-20s %s\n" $output [${RED}OFFLINE${NORMAL}]
-  #printf "%-20s %s\n" $output `grep 'Serial Number: ' ./Computers/$output.txt | sed 's/Serial Number: //g'` >> ./offline.txt
+  printf "$output\n" >> /home/Logfiles/bursche1_offline.txt
+
+  #printf "%-20s %s\n" $output `grep 'Serial Number: ' ./Computers/$output.txt | sed 's/Serial Number: //g'` >> ./home/Logfiles/bursche1_offline.txt
   fi
 done
 
